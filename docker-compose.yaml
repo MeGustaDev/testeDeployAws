@@ -1,0 +1,19 @@
+name: my-node-app
+services:
+  node-app:
+    image: node_app_image
+    container_name: node_app_container
+    build: .
+    ports:
+      - "3000:3000"
+
+
+
+
+ 
+# volumes:
+#   - type: bind
+#     source: C:\Users\gusta\Documents\praticas-estagio\sprint3-teste\nest-docker-teste
+#     target: /app
+
+
