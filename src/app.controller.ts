@@ -12,7 +12,7 @@ export class AppController {
 
   @Get('search')
   async searchArtist(@Query('artist') artist:string): Promise<any> {
-    const accessToken = "BQAInlF_MwPpbmn09cKsjPHSoG2sC_0ZVVaUTD3rB-aOB_BpWWvGsN2_a0-Wf4EHcG9af96-mTKZLZ8CwXmKYnNMeNXxPvSz4FqE9bvDcbOeAK58vqQH"; //por enquanto deixar o accessToken hardcoded
+    const accessToken = "BQDpULmXro3CH34kOTZuSdaF9LkJS5rpKzyK0pwJUpot6rlDwC6aV5b_IDQzCLQZAjmsv5SUa8AHv3yYPXzKzyxI_z1vH68QX9aXEQIr8ZQIe8Xk31c"; //por enquanto deixar o accessToken hardcoded
     const options = {
       method: "GET",
       headers: {
@@ -41,7 +41,7 @@ export class AppController {
   @Get(':artistId')
   async getArtistTopTracks(@Param('artistId') artistId: string ): Promise<any> {
 
-    const accessToken = "BQAInlF_MwPpbmn09cKsjPHSoG2sC_0ZVVaUTD3rB-aOB_BpWWvGsN2_a0-Wf4EHcG9af96-mTKZLZ8CwXmKYnNMeNXxPvSz4FqE9bvDcbOeAK58vqQH"; //por enquanto deixar o accessToken hardcoded
+    const accessToken = "BQDpULmXro3CH34kOTZuSdaF9LkJS5rpKzyK0pwJUpot6rlDwC6aV5b_IDQzCLQZAjmsv5SUa8AHv3yYPXzKzyxI_z1vH68QX9aXEQIr8ZQIe8Xk31c"; //por enquanto deixar o accessToken hardcoded
     
     const options = {
       method: "GET",
